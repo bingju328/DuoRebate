@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <include layout="@layout/include_layout_titlebar"
+        android:id="@+id/titlebar"
+        />
+    <RelativeLayout
+        android:id="@+id/rl_titlebar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_titlebar_height"
+        android:background="@color/titlebar_bg_color_normal"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/ll_choice_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="@dimen/dimen_10dip"
+            android:layout_marginBottom="@dimen/dimen_10dip"
+            >
+            <TextView
+                android:id="@+id/tv_wait_back_order"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="贷款审批"
+                android:textColor="@color/main_white"
+                android:textSize="@dimen/textsize_15sp"
+                android:paddingTop="@dimen/dimen_5dip"
+                android:paddingBottom="@dimen/dimen_5dip"
+                android:paddingLeft="@dimen/dimen_20dip"
+                android:paddingRight="@dimen/dimen_20dip"
+                />
+            <!--android:background="@drawable/bg_semi_circle_left_selector"-->
+            <TextView
+                android:id="@+id/tv_backed_order"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="额度审批"
+                android:textColor="@color/main_white"
+                android:textSize="@dimen/textsize_15sp"
+                android:paddingTop="@dimen/dimen_5dip"
+                android:paddingBottom="@dimen/dimen_5dip"
+                android:paddingLeft="@dimen/dimen_20dip"
+                android:paddingRight="@dimen/dimen_20dip"
+
+                />
+            <!--android:background="@drawable/bg_semi_circle_right_selector"-->
+        </LinearLayout>
+
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/ll_fragment_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_below="@id/titlebar"
+        />
+    <!--<include-->
+        <!--layout="@layout/include_layout_loading"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_below="@+id/rl_titlebar"-->
+        <!--android:visibility="gone"/>-->
+
+</RelativeLayout>

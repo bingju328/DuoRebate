@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/DuoRebate.iml" filepath="$PROJECT_DIR$/DuoRebate.iml" />
+      <module fileurl="file://$PROJECT_DIR$/libraries/WheelPicker/WheelPicker.iml" filepath="$PROJECT_DIR$/libraries/WheelPicker/WheelPicker.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/libraries/boxing/boxing.iml" filepath="$PROJECT_DIR$/libraries/boxing/boxing.iml" />
+      <module fileurl="file://$PROJECT_DIR$/libraries/boxing-impl/boxing-impl.iml" filepath="$PROJECT_DIR$/libraries/boxing-impl/boxing-impl.iml" />
+      <module fileurl="file://$PROJECT_DIR$/libraries/libraries.iml" filepath="$PROJECT_DIR$/libraries/libraries.iml" />
+      <module fileurl="file://$PROJECT_DIR$/libraries/network/network.iml" filepath="$PROJECT_DIR$/libraries/network/network.iml" />
+      <module fileurl="file://$PROJECT_DIR$/libraries/pulltorefresh/pulltorefresh.iml" filepath="$PROJECT_DIR$/libraries/pulltorefresh/pulltorefresh.iml" />
+      <module fileurl="file://$PROJECT_DIR$/libraries/spcenter/spcenter.iml" filepath="$PROJECT_DIR$/libraries/spcenter/spcenter.iml" />
+    </modules>
+  </component>
+</project>

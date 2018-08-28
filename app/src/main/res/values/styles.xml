@@ -1,0 +1,61 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <!--<style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">-->
+        <!--&lt;!&ndash; Customize your theme here. &ndash;&gt;-->
+        <!--<item name="colorPrimary">@color/colorPrimary</item>-->
+        <!--<item name="colorPrimaryDark">@color/colorPrimaryDark</item>-->
+        <!--<item name="colorAccent">@color/colorAccent</item>-->
+    <!--</style>-->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <!--<item name="android:windowNoTitle">true</item>-->
+        <!--<item name="android:windowAnimationStyle">@style/AnimationActivity</item>-->
+        <!-- <item name="android:windowAnimationStyle">@style/MyActivitySiwtchAnimation</item>AnimationActivity -->
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+    <style name="AppBaseTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+
+    </style>
+    <style name="AppMainTheme" parent="android:Theme.Light">
+        <item name="android:windowNoTitle">true</item>
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+
+    </style>
+    <!--popuwindow-->
+    <style name="popwin_anim_style">
+        <item name="android:windowEnterAnimation">@anim/popwindow_anim_start</item>
+        <item name="android:windowExitAnimation">@anim/popwindow_anim_end</item>
+    </style>
+    <style name="line_horization_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/dimen_0.5dip</item>
+        <item name="android:background">@color/line_color</item>
+    </style>
+    <style name="line_horization_width_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/dimen_15dip</item>
+        <item name="android:background">@color/bg_color_found</item>
+    </style>
+    <style name="line_vertical_style">
+        <item name="android:layout_width">@dimen/dimen_0.5dip</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@color/line_color</item>
+    </style>
+    <style name="line_horization_1dp_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/dimen_1dip</item>
+        <item name="android:background">@color/line_color</item>
+    </style>
+</resources>

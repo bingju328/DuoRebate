@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#bd0b0b</color>
+    <color name="colorPrimaryDark">#bd0b0b</color>
+    <color name="colorAccent">#bd0b0b</color>
+    <color name="main_white">#ffffffff</color>
+
+    <!--TitleBar-->
+    <color name="titlebar_bg_color">#bd0b0b</color>
+    <color name="titlebar_bg_color_normal">#bd0b0b</color>
+    <color name="titlebar_bg_color_press">#C53333</color>
+    <color name="titletar_title_color">#fffefefe</color>
+
+    <color name="my_signature_pop_normal">#e7e7e7</color>
+    <color name="my_signature_pop_press">#d2d2d2</color>
+
+    <!--tabBar-->
+    <color name="tabbar_bg_color_normal">#bd0b0b</color>
+    <color name="tabbar_bg_color_press">#C53333</color>
+    <color name="tabbar_title_color_normal">#999999</color>
+    <color name="tabbar_title_color_press">#1C96D4</color>
+    <!--home-->
+    <color name="title_home_money">#4aa9f6</color>
+    <!--item check loan-->
+    <!--已通过-->
+    <color name="item_check_passed">#24B460</color>
+    <!--审核中-->
+    <color name="item_check_passing">#FCB22F</color>
+    <!--未通过-->
+    <color name="item_check_nopassed">#C30914</color>
+
+    <color name="bottom_tabbar_color">#bd0b0b</color>
+    <color name="bottom_tabbar_title_color_normal">#FFFFFF</color>
+    <color name="bottom_tabbar_title_color_press">#FD7575</color>
+
+    <color name="main_color_normal">#bd0b0b</color>
+    <color name="main_color_press">#C53333</color>
+    <color name="main_color_bg">#ffedeff0</color>
+    <color name="silver_color_normal">#DFE3EB</color>
+    <color name="silver_color_press">#D3D6DE</color>
+    <color name="line_color">#fff5f5f5</color>
+    <color name="bg_color_found">#fff5f5f5</color>
+    <color name="gray_efef">#ffefefef</color>
+
+    <color name="gray_333">#ff333333</color>
+    <color name="gray_555">#ff555555</color>
+    <color name="gray_666">#ff666666</color>
+    <color name="gray_6767">#ff676767</color>
+    <color name="gray_6666">#66666666</color>
+    <color name="gray_999">#ff999999</color>
+    <color name="gray_bebe">#ffdedede</color>
+    <color name="gray_f4f4">#fff4f4f4</color>
+    <color name="gray_4040">#ff404040</color>
+
+    <!--字体颜色值-->
+    <color name="tv_black">#1a1a1a</color><!--字体黑色-->
+    <color name="tv_black_0101">#010101</color><!--字体黑色-->
+    <color name="tv_white">#ffffff</color><!--字体黑色-->
+    <color name="tv_gray_deep">#404040</color><!--文字深灰色-->
+    <color name="tv_gray_centre">#666666</color><!--文字中灰色-->
+    <color name="tv_gray_shallow">#a6a6a6</color><!--文字浅灰色-->
+    <color name="tv_shallow">#cccccc</color><!--文字最浅灰色-->
+    <color name="tv_hide">#ababab</color><!--文字提示颜色-->
+    <!--分割线颜色-->
+    <color name="line_backgroud_gry">#e8eaeb</color>
+    <color name="line_backgroud_gry_d9d9d9">#d9d9d9</color>
+    <color name="search_layout_status_d9d9d9">#d9d9d9</color>
+
+
+
+</resources>

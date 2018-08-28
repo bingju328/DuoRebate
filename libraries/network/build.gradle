@@ -1,0 +1,59 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion '27.0.3'
+
+    defaultConfig {
+        minSdkVersion 14
+        targetSdkVersion 25
+        versionCode 1
+        versionName "1.0"
+
+//        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    sourceSets {
+        main.java.srcDirs += 'src/main/kotlin'
+    }
+    lintOptions{
+        abortOnError false
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    // Glide
+    compile "com.github.bumptech.glide:glide:$rootProject.glide_version"
+    compile "com.squareup.okhttp:okhttp:$rootProject.okhttp_version"
+    compile 'com.lzy.net:okhttputils:+'  //版本号使用 + 可以自动引用最新版
+    compile 'com.lzy.net:okhttpserver:+' //版本号使用 + 可以自动引用最新版
+    //引入retrofit2.1.0
+    compile "com.squareup.retrofit2:retrofit:$rootProject.retrofit_version"
+    //引入的gson解析相关的，如果没用gson解析此行可省略
+    compile "com.squareup.retrofit2:converter-gson:$rootProject.converter_gson_version"
+    //引入打印日志相关的jar包
+    compile "com.squareup.okhttp3:logging-interceptor:$rootProject.logging_interceptor_version"
+    //rxjava
+    compile "com.squareup.retrofit2:adapter-rxjava:$rootProject.adapter_rxjava_version"
+    compile "io.reactivex:rxandroid:$rootProject.rxandroid_version"
+    compile "com.android.support:appcompat-v7:$rootProject.supportLibraryVersion"
+    testCompile 'junit:junit:4.12'
+    //    compile "org.jetbrains.kotlin:kotlin-stdlib-jre7:$rootProject.kotlin_version"
+    compile "org.jetbrains.kotlin:kotlin-stdlib:$rootProject.kotlin_version"
+    implementation files('libs/universal-image-loader-1.9.5.jar')
+}
+//repositories {
+//    mavenCentral()
+//}
