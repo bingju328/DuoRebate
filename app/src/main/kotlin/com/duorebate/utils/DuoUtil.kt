@@ -101,21 +101,23 @@ fun showKeyBoard(view: View, context: Context) {
                 .showSoftInput(view,0)
     }
 }
-//格式化
-fun checkPhone(phone: String): Boolean{
-    val p = Pattern.compile("(\\+\\d{2}\\s{0,1}|\\d{0,4}\\s{0,1})\\d{7,14}")
-    if (TextUtils.isEmpty(phone) ||
-            phone.length < 7 ||
-            !p.matcher(phone).matches()) {
-        return false
-    }
-    return true
-}
-fun replacePhone(phone: String): String{
-    return phone.replace("^(\\w{3})(\\w*)(\\w{4})$","$1****$2")
-}
 /**dp转px**/
-fun dip2px(dipValue: Float,context: Context): Int {
+fun dip2px(context: Context,dipValue: Float): Int {
     val reSize = context.resources.displayMetrics.density
     return (dipValue*reSize+0.5).toInt()
+}
+
+/**
+ * 防止按钮重复被点击
+ */
+private var lastClickTime: Long = 0
+
+fun isFastDoubleClick(): Boolean {
+    val time = System.currentTimeMillis()
+    val timeD = time - lastClickTime
+    if (0 < timeD && timeD < 600) {
+        return true
+    }
+    lastClickTime = time
+    return false
 }

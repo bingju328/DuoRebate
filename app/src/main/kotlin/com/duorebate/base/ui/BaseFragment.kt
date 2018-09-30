@@ -203,6 +203,22 @@ abstract class BaseFragment : Fragment() {
             layout_load_no_data!!.visibility = View.VISIBLE
         }
     }
+    /*
+    * titeleBack
+    * */
+    protected fun setTitleBgRes(resId: Int) {
+        if (isTitleBar) {
+            titleBarBuilder.setTitleBgRes(resId)
+        }
+    }
+    /*
+    * titeleBack
+    * */
+    protected fun setTitleBgColor(resId: Int) {
+        if (isTitleBar) {
+            titleBarBuilder.setTitleBgColor(resId)
+        }
+    }
     /**
      * titlebar
      * */

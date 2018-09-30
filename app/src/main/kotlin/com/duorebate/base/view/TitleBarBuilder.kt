@@ -64,6 +64,10 @@ class TitleBarBuilder{
         rootView!!.setBackgroundResource(resid)
         return this@TitleBarBuilder
     }
+    fun setTitleBgColor(resid: Int): TitleBarBuilder {
+        rootView!!.setBackgroundColor(resid)
+        return this@TitleBarBuilder
+    }
     fun setTitleText(text: String): TitleBarBuilder {
         tvTitle.visibility = if (TextUtils.isEmpty(text)) View.GONE else View.VISIBLE
         tvTitle.text = text

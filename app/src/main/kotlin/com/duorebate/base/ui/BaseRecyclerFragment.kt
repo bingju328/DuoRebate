@@ -4,7 +4,9 @@ import android.os.Handler
 import android.os.Message
 import android.util.Log
 import android.view.View
+import com.duorebate.R
 import com.duorebate.utils.isNetworkAvailable
+import com.loanapp.apiservice.HttpModel
 import com.pulltorefresh.*
 import rx.Observable
 import java.lang.ref.WeakReference
@@ -35,7 +37,7 @@ abstract class BaseRecyclerFragment<T>: BaseFragment() {
     protected var pageSize = 10
     /** 当前页加载的数据大小用来判断分页的*/
     protected var currentPageSize = 0
-//    protected lateinit var httpModel: HttpModel
+    protected lateinit var httpModel: HttpModel
 
 
 

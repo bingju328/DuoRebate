@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_content"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/dimen_45dip"
+        android:layout_weight="1"
+        android:text="2017-06-31 20:12:08"
+        android:textSize="@dimen/textsize_13sp"
+        android:textColor="@color/gray_666"
+        android:gravity="center"
+        />
+    <TextView
+        android:id="@+id/tv_money"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/dimen_45dip"
+        android:layout_weight="1"
+        android:text="冯**成功借款1000元"
+        android:textSize="@dimen/textsize_13sp"
+        android:textColor="@color/gray_666"
+        android:gravity="center"
+        />
+</LinearLayout>

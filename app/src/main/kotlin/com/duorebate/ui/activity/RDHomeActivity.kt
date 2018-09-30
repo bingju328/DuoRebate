@@ -12,6 +12,7 @@ import android.widget.TextView
 import com.duorebate.R
 import com.duorebate.base.ui.BaseFragment
 import com.duorebate.ui.fragment.HomeFragment
+import com.duorebate.ui.fragment.MainFragment
 import com.duorebate.utils.getStatusBarHeight
 import kotlinx.android.synthetic.main.activity_home.*
 
@@ -20,7 +21,7 @@ import kotlinx.android.synthetic.main.activity_home.*
  */
 class RDHomeActivity: FragmentActivity(){
     private val Tag = "RDHomeActivity"
-    private lateinit var statusbar_view: View
+//    private lateinit var statusbar_view: View
     /** fragment*/
     private lateinit var mFragment: Array<Class<out BaseFragment>>
     private var mFragmentMaps = HashMap<Int, Fragment>()
@@ -46,7 +47,7 @@ class RDHomeActivity: FragmentActivity(){
 
     private fun initConfig() {
 //        if (MoccaPreferences.is_client.get()!!) { //客户登录
-            mFragment = arrayOf(HomeFragment().javaClass, HomeFragment().javaClass,HomeFragment().javaClass)
+            mFragment = arrayOf(MainFragment().javaClass, HomeFragment().javaClass,HomeFragment().javaClass)
 //        } else { //管理员登录
 //            mFragment = arrayOf(HomeFragment().javaClass, ApproveFragment().javaClass,PersonalFragment().javaClass)
 //        }
@@ -54,14 +55,14 @@ class RDHomeActivity: FragmentActivity(){
     }
 
     private fun initView() {
-        statusbar_view = context.statusbar_view
+//        statusbar_view = context.statusbar_view
         val temp1 = getStatusBarHeight(this)
         val ll = RelativeLayout.LayoutParams(
                 ViewGroup.LayoutParams.MATCH_PARENT,
                 temp1
         )
-        statusbar_view.setBackgroundColor(resources.getColor(R.color.main_color_normal))
-        statusbar_view.layoutParams=ll
+//        statusbar_view.setBackgroundColor(resources.getColor(R.color.item_check_passed))
+//        statusbar_view.layoutParams=ll
         //fragment的内容显示
         ll_content = context.ll_content
         vBottomTabs = arrayOf(
