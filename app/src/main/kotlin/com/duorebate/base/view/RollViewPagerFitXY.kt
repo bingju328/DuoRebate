@@ -27,7 +27,7 @@ import java.util.*
  *
  * @author Stone
  */
-abstract class RollViewPagerFitXY : ViewPager {
+open class RollViewPagerFitXY : ViewPager {
 
     private lateinit var mActivity: Activity
     private lateinit var ct: Context
@@ -44,7 +44,7 @@ abstract class RollViewPagerFitXY : ViewPager {
     private val sScreenWidth: Int = 0
     private val sScreenHeight: Int = 0
 
-    private lateinit var application: Application
+    private var application: Application? = null
 
     private var myHandler: MyHandler? = null
 
@@ -118,7 +118,7 @@ abstract class RollViewPagerFitXY : ViewPager {
         fun OnTouchCllick(position: Int)
     }
 
-    constructor(application: Application, ct: Context, dotList: List<View>, dotFocus: Int, dotNormal: Int,
+    constructor(application: Application?, ct: Context, dotList: List<View>, dotFocus: Int, dotNormal: Int,
                 myOnTouchCllickCallBack: MyOnTouchCllickCallBack) : super(ct) {
         this.application = application
         this.ct = ct

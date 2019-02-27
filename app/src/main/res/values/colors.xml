@@ -36,6 +36,7 @@
     <color name="main_color_normal">#bd0b0b</color>
     <color name="main_color_press">#C53333</color>
     <color name="main_color_bg">#ffedeff0</color>
+    <color name="main_list_bg">#fff4f2e6</color>
     <color name="silver_color_normal">#DFE3EB</color>
     <color name="silver_color_press">#D3D6DE</color>
     <color name="line_color">#fff5f5f5</color>
